@@ -22,3 +22,23 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Build output folders
+bin/
+out/
+target/
+build/
+
+# IDE-specific files and folders
+.project
+.classpath
+.settings/
+.idea/
+*.iml
+.vscode/
+
+# Eclipse-generated module declaration (not part of the submission)
+**/src/module-info.java
+
+# macOS
+.DS_Store
