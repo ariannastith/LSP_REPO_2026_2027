@@ -133,7 +133,7 @@ I used Cursor (Claude) as an AI assistant to help refactor my Assignment #2
 solution and to draft this design discussion. I reviewed, compiled, and tested the
 resulting code myself and verified that its output matches my Assignment #2 output.
 
-Transcript of my AI interaction: <!-- TODO: paste the shared transcript link here before submitting -->
+Transcript of my AI interaction: https://docs.google.com/document/d/18zPj_HN74TjNBoONzu52inrm6rs9pIyXaEtxdL5La8c/edit?usp=sharing 
 
 I did not use any Internet resources or third-party libraries for this assignment;
 the solution uses only the standard Java library.
