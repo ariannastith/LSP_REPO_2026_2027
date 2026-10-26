@@ -1,0 +1,5 @@
+# CRC Explanation — Library and Book
+
+The CRC card for `Book` lists no collaborators: a book only stores its own information and validates its own borrow/return transitions. The CRC card for `Library` lists `Book` as its collaborator because the library’s responsibilities — maintain books, add and find them, coordinate borrowing and returning, enforce the borrowing limit, and retrieve books by criteria — all require asking a `Book` for its ISBN, author, and availability, and then telling that book to change state. Collaboration does not run the other way. A `Book` does not need to know that a `Library` exists, which is why a standalone book can still be borrowed and returned directly.
+
+The three-book limit is a `Library` responsibility, not a `Book` responsibility. A single book can only be available or borrowed; it has no view of how many other books are out. The library is the object that “maintains books” and “coordinates borrowing and returning,” so it is the only place that can count current loans and reject a fourth borrow before it delegates `borrowBook()` to the `Book`.
