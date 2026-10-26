@@ -1,0 +1,109 @@
+ASSIGNMENT 5 - INTEGERSET TEST RESULTS
+Do not edit Driver.java. Submit the complete output.
+
+--- clear() ---
+PASS [2/2] clears populated set
+PASS [2/2] clearing empty set
+SUBTOTAL clear(): 4/4
+
+--- length() ---
+PASS [2/2] unique count with duplicates
+PASS [2/2] empty length
+SUBTOTAL length(): 4/4
+
+--- equals(IntegerSet) ---
+PASS [2/2] order independent
+PASS [2/2] different content
+PASS [2/2] empty equals empty
+PASS [2/2] same object and different sizes
+SUBTOTAL equals(IntegerSet): 8/8
+
+--- contains(int) ---
+PASS [2/2] present and absent
+PASS [2/2] empty contains
+SUBTOTAL contains(int): 4/4
+
+--- largest() ---
+PASS [2/2] negative and positive
+PASS [2/2] empty throws IllegalStateException
+SUBTOTAL largest(): 4/4
+
+--- smallest() ---
+PASS [2/2] negative and positive
+PASS [2/2] empty throws IllegalStateException
+SUBTOTAL smallest(): 4/4
+
+--- add(int) ---
+PASS [2/2] duplicates ignored
+PASS [2/2] boundary integers
+SUBTOTAL add(int): 4/4
+
+--- remove(int) ---
+PASS [2/2] remove existing
+PASS [2/2] remove absent
+SUBTOTAL remove(int): 4/4
+
+--- union(IntegerSet) ---
+PASS [2/2] overlap
+PASS [2/2] empty and same operand
+PASS [3/3] does not mutate inputs
+SUBTOTAL union(IntegerSet): 7/7
+
+--- intersect(IntegerSet) ---
+PASS [2/2] overlap
+PASS [2/2] disjoint and same operand
+PASS [3/3] independent result
+SUBTOTAL intersect(IntegerSet): 7/7
+
+--- diff(IntegerSet) ---
+PASS [2/2] direction matters
+PASS [2/2] empty and same operand
+PASS [3/3] independent result
+SUBTOTAL diff(IntegerSet): 7/7
+
+--- complement(IntegerSet) ---
+PASS [2/2] assignment-specific reverse difference
+PASS [1/1] empty operands
+PASS [2/2] independent result
+SUBTOTAL complement(IntegerSet): 5/5
+
+--- isSubsetOf(IntegerSet) ---
+PASS [2/2] proper subset
+PASS [2/2] not subset
+PASS [1/1] equal sets
+PASS [2/2] empty cases
+SUBTOTAL isSubsetOf(IntegerSet): 7/7
+
+--- isDisjoint(IntegerSet) ---
+PASS [2/2] no overlap
+PASS [2/2] overlap
+PASS [2/2] empty and same operand
+SUBTOTAL isDisjoint(IntegerSet): 6/6
+
+--- symmetricDiff(IntegerSet) ---
+PASS [3/3] partially overlapping
+PASS [2/2] identical sets
+PASS [2/2] empty and disjoint
+PASS [2/2] independent result
+SUBTOTAL symmetricDiff(IntegerSet): 9/9
+
+--- isEmpty() ---
+PASS [1/1] new set
+PASS [1/1] populated set
+PASS [1/1] after clear
+SUBTOTAL isEmpty(): 3/3
+
+--- toString() ---
+PASS [2/2] ascending order
+PASS [1/1] empty formatting
+PASS [2/2] exact spacing and duplicate handling
+SUBTOTAL toString(): 5/5
+
+======================================
+FUNCTIONAL SCORE: 92/92
+TESTS PASSED: 47/47
+MANUAL REVIEW: Javadocs /5; AI report /3
+FINAL SCORE: functional score + manual review (out of 100)
+NOTE: Failed foundational methods can affect dependent tests.
+Instructor will review the source before finalizing such deductions.
+======================================
